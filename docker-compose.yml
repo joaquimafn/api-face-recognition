@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  face-api:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - "./encodings:/app/encodings"
+      - "./encodings.db:/app/encodings.db"
